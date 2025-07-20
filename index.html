@@ -11,16 +11,19 @@
   <h2>TRACK YOUR HABITS AND TASKS</h2>
 
   <div class="task-holder">
-    <ul id="task-list">
-      <li><input type="checkbox" /> DO HOMEWORK</li>
-      <li><input type="checkbox" /> DO COMPUTER NETWORK</li>
-      <li><input type="checkbox" /> SCORE 9+ SGPA</li>
-    </ul>
+    
+      <ul id="task-list">
+      <li><input type="checkbox" onclick="performtask(this.checked, this)" /> DO HOMEWORK</li>
+      <li><input type="checkbox" onclick="performtask(this.checked, this)" /> DO COMPUTER NETWORK</li>
+      <li><input type="checkbox" onclick="performtask(this.checked, this)" /> SCORE 9+ SGPA</li>
+      </ul>
 
-    <input type="text" placeholder="Add a new task" class="input" />
-    <button class="additem" >Add Item +</button>
+   
+
+    <input type="text" placeholder="Add a new task" class="input" id= "taskadd" />
+    <button class="additem" id="newtask" onclick="additem()" >Add Item +</button>
   </div>
 
- 
+ <script src="script.js"></script>
 </body>
 </html>
